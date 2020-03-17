@@ -26,6 +26,14 @@ ul{
       padding-right: 20px;
       color: #ffffff;
   }
+  .dark {
+      padding: 15px;
+      background: #35424a;
+      color: #ffffff;
+      margin-top: 10px;
+      margin-bottom: 1px;
+
+  }
 
 header {
     background: #35424a;
@@ -136,6 +144,41 @@ header a:hover{
     width:90px;
    }
 
+
+
+
+   /* --------ABOUT Section------- */
+
+   aside#sidebar {
+        float: right;
+        margin-top: 15px;
+        width:30%;
+      
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+   padding: 5px;
+
+}
+/* Main col */
+
+article#main-col{
+    width:65%;
+    float: left;
+    margin-top: 15px;
+}
+/* Services */
+    ul#services li {
+        list-style: none;
+        padding: 20px;
+        border: #35424a solid 1px;
+        margin: 20px;
+        background: #cccccc;
+
+
+
+    }
    /* Footer */
    footer {
        padding: 20px;
@@ -146,9 +189,36 @@ header a:hover{
        
 
    }
+/* media queries */
+
+@media (max-width:768px){
+    header #log,
+    header nav,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    aside#sidebar, article#main-col,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-bottom: 40px ;
+
+    }
+    #newsletter .btn-1, .quote .btn-1{
+        display: block;
+        width: 100%;
 
 
-
-
-   /* --------ABOUT Section------- */
-   
+    }
+    #newsletter form input, .quote input, .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+       }
+    
+    } 
